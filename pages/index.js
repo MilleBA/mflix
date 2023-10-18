@@ -1,11 +1,14 @@
 import clientPromise from '../lib/mongodb'
+import {NavBar} from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
 export default function Home({varer}) {
     return (
-        <div>
-            <div>
-                <h1>Varer i databasen</h1>
+        <div className=''>
+            <div className="  flex flex-col justify-items-center items-center ">
+
+                <h1 className=" p-10 m-5 text-3xl font-bold underline bg-orange-400">Varer i databasen</h1>
                 <br/>
                 <ul>
                     {varer.map((vare) => (
@@ -16,6 +19,7 @@ export default function Home({varer}) {
                         </li>
                     ))}
                 </ul>
+
             </div>
         </div>
     )
