@@ -3,12 +3,12 @@ import clientPromise from "../lib/mongodb";
 
 export default function People({ people }) {
     return (
-        <div>
-            <h1>Persons who lives in Bakåskollen!</h1>
+        <div className="h-screen p-10 flex flex-col justify-items-center items-center ">
+            <h1 className='text-3xl font-bold bg-teal-500'>Persons who lives in Bakåskollen!</h1>
             <br/>
             <ul>
                 {people.map((person) => (
-                    <li>
+                    <li className='p-5'>
                         <h2>{person.name}</h2>
                         <h3>{person.age}</h3>
                         <p>{person.address}</p>

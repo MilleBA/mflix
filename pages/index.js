@@ -12,7 +12,7 @@ export default function Home({varer}) {
                 <br/>
                 <ul>
                     {varer.map((vare) => (
-                        <li>
+                        <li className='p-5'>
                             <h2>{vare.VNr}</h2>
                             <h3>{vare.Betegnelse}</h3>
                             <p>{vare.Pris}</p>
